@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background: gainsboro;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    
+    label {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+    }
+    
+    input {
+        width: 20vw;
+        height: 2vh;
+        border-radius: 20px;
+        border-color: gray;
+    }
+    
+    #letrero {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+    }
+    
+    #enviar {
+        float: right;
+        width: 20vw;
+        border-radius: 20px;
+    }
+    
+    #formulario {
+        width: 20vw;
+    }
+</style>
+
+<body>
+    <div id="letrero">
+        <h1>Registrar Cliente</h1>
+    </div>
+    <div id="formulario">
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+            <label for="user">User</label>
+            <input type="text" name="user" id="user">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </form>
+        <button id="enviar" onclick="algo()">Registrar</button></a>
+    </div>
+    <script src="./fet.js"></script>
+</body>
+
+</html>

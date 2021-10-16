@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background: gainsboro;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    
+    label {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+    }
+    
+    input {
+        width: 20vw;
+        height: 3vh;
+        border-radius: 20px;
+        border: transparent;
+    }
+    
+    #letrero {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+    }
+    
+    #enviar {
+        float: right;
+        width: 20vw;
+        border-radius: 20px;
+        border: none;
+        background-color: yellowgreen;
+    }
+    
+    #formulario {
+        width: 30vw;
+        /*background-color:aqua; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #boton-registro {
+        width: 30vw;
+        height: 10vh;
+        /*background-color:yellow; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div id="letrero">
+        <h1>Login</h1>
+    </div>
+    <div id="formulario">
+        <form action="" method="post">
+            <label for="user_login">User</label>
+            <input type="text" name="user" id="user_login" required>
+            <label for="password_login">Password</label>
+            <input type="password" name="password" id="password_login" required>
+        </form>
+    </div>
+    <div id="boton-registro">
+        <button id="enviar" onclick="inciar_sesion()">Inicias sesion</button>
+        <a href="registro.html">Registrarme</a>
+    </div>
+    <script src="fet.js"></script>
+</body>
+
+</html>
